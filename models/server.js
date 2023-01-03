@@ -12,7 +12,7 @@ class Server {
     // middlewares que inicializa metodos de la clase server asi como routes.
     constructor() {
         this.app = express();
-        this.port = process.env.PORT;
+        this.port = process.env.PORT || 3000;
         this.usuariosPath = '/api/usuarios';
         //Middlewares
         this.middlewares();
